@@ -23,14 +23,15 @@ class ViewController: UIViewController {
     //.repeat, .autoreverse
     //Assim que aparece
     override func viewDidAppear(_ animated: Bool) {
-//        UIView.animate(withDuration: 1.0, delay: 0, options: [ .curveEaseInOut], animations: {
-//
-//            self.rocket.center.y = self.world.center.y - self.world.frame.size.height/2 - self.rocket.frame.size.height/2
-//
-//        }, completion: { finished in
-//            self.rocket.image = UIImage(named: "rocket2.png")
-//        })
-//
+        UIView.animate(withDuration: 1.0, delay: 0, options: [ .curveEaseInOut], animations: {
+
+            self.rocket.center.y = self.world.center.y - self.world.frame.size.height/2 - self.rocket.frame.size.height/2
+
+        }, completion: { finished in
+            self.rocket.image = UIImage(named: "rocket2.png")
+        })
+
+        
         
 //        let circlePath = UIBezierPath(arcCenter: self.world.center, radius: self.world.frame.width/2, startAngle: 0, endAngle: .pi*2, clockwise: true)
 //
@@ -42,14 +43,16 @@ class ViewController: UIViewController {
 //
 //        self.rocket.layer.add(animation, forKey: nil)
         
-        UIView.animate(withDuration: 1.0, delay: 0, options: [ .repeat, .autoreverse], animations: {
-            
-            self.rocket.center.y = self.world.center.y - self.world.frame.size.height/2
-            self.rocket.transform = self.rocket.transform.rotated(by: CGFloat(Double.pi))
-            
-        }, completion: { finished in
-            self.rocket.image = UIImage(named: "rocket2.png")
-        })
+        
+        
+//        UIView.animate(withDuration: 1.0, delay: 0, options: [ .repeat, .autoreverse], animations: {
+//
+//            self.rocket.center.y = self.world.center.y - self.world.frame.size.height/2
+//            self.rocket.transform = self.rocket.transform.rotated(by: CGFloat(Double.pi))
+//
+//        }, completion: { finished in
+//            self.rocket.image = UIImage(named: "rocket2.png")
+//        })
         
 
     }
